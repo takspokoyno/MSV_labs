@@ -1,4 +1,4 @@
-package org.example;
+package msv.lab1;
 
 public class Main {
     public static double func(double x,double y,double z,double h)
@@ -28,7 +28,7 @@ public class Main {
     public static double comparison(double tan,double yBalfa,double eps,double y1)
     {
         if(Math.abs(yBalfa-y1)<=eps )
-        {System.out.println("        It is Result ");
+        {System.out.println("        It is Result");
             return 0;}
 
         if(Math.abs(yBalfa-y1)>eps && yBalfa>y1)
@@ -94,12 +94,15 @@ public class Main {
     }
     public static double calculation (double tanalfa,double h,double eps,double y1)
     {
+        if (h <= 0 || eps <= 0) {
+            throw new IllegalArgumentException("h and eps must be positive");
+        }
         double yalfa=yBAlfa(tanalfa,h);
         double comp=comparison(tanalfa,yalfa,eps,y1);
         return comp;
     }
 
-    public static void main(String[] args)
+    public static void main()
     {
         double eps=0.05;
         double y1=2.;
