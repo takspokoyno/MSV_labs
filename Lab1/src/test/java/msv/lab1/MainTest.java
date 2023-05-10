@@ -35,6 +35,7 @@ class MainTest {
 
     @Test
     public void testFunc() {
+        h = 0.1;
         double expected = 4.164;
         double result = Main.func(x, y, z, h);
         assertEquals(expected, result, eps);
