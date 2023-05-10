@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="TestNG">
-    <test parallel="methods" thread-count="7" name="C:\Users\vladb\Desktop\MSV\Lab1\src\test\java\msv.lab1\TestNG.java">
+    <test parallel="methods" thread-count="7" name="C:\Users\vladb\Desktop\MSV\Lab1_2\src\test\java\msv.lab1\TestNG.java">
         <classes>
             <class name="msv.lab1.MainTestNG">
                 <methods>
