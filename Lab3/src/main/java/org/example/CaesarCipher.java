@@ -3,6 +3,8 @@ package org.example;
 public class CaesarCipher {
     private final Substitutor substitutor;
 
+    private SymbolSubstitution sub = new SymbolSubstitution();
+
     public CaesarCipher(Substitutor _substitutor) {
         this.substitutor = _substitutor;
     }
